@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ROSE Hotels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Load Boostrap styles -->
+    <link href="bootstrap.min.4.5.2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="head-bottom flex">
+        <h2>SEARCH</h2>
+        <p>FIND YOUR PERFECT ROOM</p>
+      </div>
+      <div class="book">
+        <form class="book-form">
+          <div class="form-item">
+            <label for="checkin-date">Check-in-Date: </label>
+            <input type="date" id="chekin-date" />
+          </div>
+          <div class="form-item">
+            <label for="checkout-date">Check-out-Date: </label>
+            <input type="date" id="chekout-date" />
+          </div>
+          <div class="form-item">
+            <label for="adult">Capacity: </label>
+            <input type="number" min="1" value="1" id="adult" />
+          </div>
+          <div class="form-item">
+            <label for="children">Hotel Chain: </label>
+            <input type="text" min="0" id="hchain" />
+          </div>
+          <div class="form-item">
+            <label for="minprice">Min Price: </label>
+            <input type="number" min="100" value="100" id="minprice" step="25" />
+          </div>
+          <div class="form-item">
+            <label for="maxprice">Max Price: </label>
+            <input type="number" min="100" value="--" id="maxprice" step="25" />
+          </div>
+          
+          <div class="row">
+            <div class="col-4 offset-4 searchbar" style="text-align: center;">
+              
+                <a href="./idx_res.html" type="button" class="head-btn">Search</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+      <span class="cancel-btn" id="cancel-btn">
+        <i class="fas fa-times"></i>
+      </span>
+
+      <ul class="navbar"></ul>
+      <a href="./index.html" type="button" class="head-btn">Home Page</a>
+      <a href="./idx_signup.html" type="button" class="head-btn">Sign Up</a>
+      <a href="./idx_login.html" type="button" class="head-btn">Log In</a>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h2>About Us</h2>
+          <p>
+            Hotel Rose a place where travelers could find respite and rejuvenation.
+            From its inception, our hotel has been committed to weaving together
+            the charm of the city with the tranquility of a serene retreat.
+          </p>  
+        </div>
+
+        
+        <div>
+          <h2>Useful Links</h2>
+          <a href="#">hotels</a>
+          <a href="#">Rooms</a>
+          <a href="#">Services</a>
+          <a href="#">Careers</a>
+          <a href="#">About Us</a>
+        </div>
+
+        <div>
+          <h2>Have A Question</h2>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span> 555 lotus Street,Ottawa, CA  </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span> +1 (613) 333 5555 </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span> RoseHotels@gmail.com </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
